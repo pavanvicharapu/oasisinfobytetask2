@@ -1,0 +1,91 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Apply a gradient background and style the header */
+body {
+    background: linear-gradient(90deg, #ff6600, #0099cc);
+    font-family: Arial, sans-serif;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+header img {
+    width: 100px;
+    border-radius: 50%;
+}
+
+header h1 {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+/* Style the navigation */
+nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7);
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav li {
+    padding: 10px 20px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+nav li:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+    color: #ff6600;
+}
+
+/* Style the sections */
+section {
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px 0;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+section h2 {
+    font-size: 24px;
+}
